@@ -5,12 +5,13 @@ import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
 import HeroService from "../components/HeroService.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import Services from "../components/Services.astro";
+ 
 import Sectors from "../components/Sectors.astro";
 import Projects from "../components/Projects.astro";
 import BlogPosts from "../components/BlogPosts.astro";
 import Cta from "../components/Cta.astro";
 import Personal from "../components/Personal.astro";
+import OurBenefits from "../components/OurBenefits.astro";
 ---
 
 <!doctype html>
@@ -28,11 +29,12 @@ import Personal from "../components/Personal.astro";
   <body>
     <Header title={SITE_TITLE} />
     <Hero />
+        <Personal />
     <HeroService />
     <Projects />
     <Sectors />
-    <Services />
-    <Personal />
+ <OurBenefits/>
+
     <BlogPosts />
     <Cta />
     <Footer /> 
