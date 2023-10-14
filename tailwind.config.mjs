@@ -2,32 +2,48 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
-  },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#ddd6fe",
-
-          secondary: "#451930",
-
-          accent: "#F2C94C",
-
-          neutral: "#1a1a1a",
-
-          "base-100": "#ffffff",
-
-          info: "#D6EAEB",
-
-          success: "#81328f",
-
-          warning: "#ef8234",
-
-          error: "#ea4034",
-        },
-      },
-    ],
-  },
-  plugins: [require("daisyui")],
+    extend: {
+      colors: {
+        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+      }
+    },
+    fontFamily: {
+      'body': [
+        'Inter',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'system-ui',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji'
+      ],
+      'sans': [
+        'Inter',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'system-ui',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji'
+      ]
+    },
+    plugins: [require("flowbite/plugin")],
+    content: ["./node_modules/flowbite/**/*.js"],
+  }
 };
