@@ -4,6 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+ 
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -15,6 +16,7 @@
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
+ 
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
@@ -30,7 +32,7 @@
 	font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Beausite Classic Regular', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -41,6 +43,18 @@ body {
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.3em;
+ 
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+
+
 }
 main {
 	width: 720px;
