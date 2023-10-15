@@ -1,64 +1,76 @@
-<section
-  x-data='{ scrollPosition: 0 }'
-  x-init="() => { window.addEventListener('scroll', () => { scrollPosition = window.scrollY; }) }"
-   :class="{  'bg-blue-500 text-white transition-all duration-300 ease-in-out': scrollPosition > 200 && scrollPosition <= 1000,    'bg-green-500 text-white transition-all duration-300 ease-in-out': scrollPosition > 1000 && scrollPosition <= 2000,'bg-yellow-500 text-black transition-all duration-300 ease-in-out': scrollPosition > 2000,'transition-all duration-300 ease-in-out': scrollPosition <= 200 }">
-  <div
-    class='grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'
-  >
-    <div
-      class='mr-auto place-self-start lg:col-span-6 max-w-md sticky top-32'
-      x-data='{ scrollPosition: 0 }'
-      x-init="() => { window.addEventListener('scroll', () => { scrollPosition = window.scrollY; }) }"
+<div
+  style='font-size: 22px; padding-left: 96px; padding-right: 96px; background-color: rgb(200, 208, 214)'
+>
+  <div style='display: flex'>
+    <div class="border-b-2 flex gap-32 border-gray-400"
     >
-      <div id='1'>
-        <h1
-          class='max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl'
-          x-text="scrollPosition > 1000 ? 'New Text after scrolling 100px' : 'Payments tool for'"
-          x-transition.opacity
-        >
-          Payments tool for <span
-            class='text-7xl'
-            style='    font-family: atkins;    font-style: italic;    font-weight: 500;'
-            >software companies</span
-          >
-        </h1>
-        <p class='max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl'>
-          From checkout to global sales tax compliance, companies around the
-          world use Flowbite to simplify their payment stack.
-        </p>
-        <a
-          href='#'
-          class='inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300'
-        >
-          Get started
-          <svg
-            class='w-5 h-5 ml-2 -mr-1'
-            fill='currentColor'
-            viewBox='0 0 20 20'
-            xmlns='http://www.w3.org/2000/svg'
-            ><path
-              fill-rule='evenodd'
-              d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-              clip-rule='evenodd'></path></svg
-          >
-        </a>
-        <a
-          href='#'
-          class='inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100'
-        >
-          Speak to Sales
-        </a>
+      <div>
+        <div style='font-weight: 600; text-transform: uppercase: width:100%'>
+          NOS SERVICES
+        </div>
       </div>
+      <h2 class='text-7xl font-medium tracking-tighter   pb-20  '>
+        How do we build your story?
+      </h2>
     </div>
-    <div class='hidden lg:mt-0 lg:col-span-6 lg:block space-y-4'>
-      <img
-        src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6341225a4ff01_Group%20491%20(1).png'
-        alt='mockup'
-      />
-      <img
-        src='https://assets.website-files.com/6259e59720a6347d57a4fe10/6259e59720a6341225a4ff01_Group%20491%20(1).png'
-        alt='mockup'
-      />
+    <div class="pl-32"
+      style='align-self: end; border-bottom-width: 2px; padding-bottom: 82px; border-color: rgb(0, 0, 0); border-style: solid; max-width:700px'
+    >
+      <p>
+        From cubs that need our help to grow to alphas that wish to re-establish
+        their place in the digital world, our line of partners is constantly
+        expanding!
+      </p>
     </div>
   </div>
-</section>
+  <div style='display: flex'>
+    <div style='flex-direction: column; display: flex; gap: 154px'>
+      <a
+        href='https://www.devolfs.com/services/brand-identity'
+        style='align-items: center; border-bottom-width: 2px; cursor: pointer; justify-content: center; opacity: 0.3; padding-bottom: 52px; padding-top: 52px; display: flex; border-color: rgba(0, 0, 0, 0.1); border-style: solid'
+        ><div style='align-items: flex-start; display: flex; gap: 40px'>
+          <div style='font-size: 28px'>01</div>
+          <div style='overflow: hidden'>
+            <h3
+              style='font-size: 132px; font-weight: 500; padding-bottom: 20px; padding-right: 20px; padding-top: 20px'
+            >
+              Brand Identity
+            </h3>
+          </div>
+        </div>
+        <div
+          style='background-color: rgb(222, 254, 82); align-items: center; bottom: 1004px; justify-content: center; left: 1162px; position:   ute; right: 576px; text-transform: uppercase; top: 450px; will-change: width, height; display: flex; width: 9.49979vw; height: 9.49979vw; border-radius: 1920px; padding: 20px'
+        >
+          <div
+            style='align-items: center; bottom: 78px; font-size: 20px; left: 28px; position:   ute; right: 28px; top: 78px; z-index: 3; display: flex'
+          >
+            <div style='font-size: 18px'>Explore More</div>
+          </div>
+        </div></a
+      > 
+      <a
+        href='https://www.devolfs.com/services/brand-identity'
+        style='align-items: center; border-bottom-width: 2px; cursor: pointer; justify-content: center; opacity: 0.3; padding-bottom: 52px; padding-top: 52px; display: flex; border-color: rgba(0, 0, 0, 0.1); border-style: solid'
+        ><div style='align-items: flex-start; display: flex; gap: 40px'>
+          <div style='font-size: 28px'>01</div>
+          <div style='overflow: hidden'>
+            <h3
+              style='font-size: 132px; font-weight: 500; padding-bottom: 20px; padding-right: 20px; padding-top: 20px'
+            >
+              Brand Identity
+            </h3>
+          </div>
+        </div>
+        <div
+          style='background-color: rgb(222, 254, 82); align-items: center; bottom: 1004px; justify-content: center; left: 1162px; position:   ute; right: 576px; text-transform: uppercase; top: 450px; will-change: width, height; display: flex; width: 9.49979vw; height: 9.49979vw; border-radius: 1920px; padding: 20px'
+        >
+          <div
+            style='align-items: center; bottom: 78px; font-size: 20px; left: 28px; position:   ute; right: 28px; top: 78px; z-index: 3; display: flex'
+          >
+            <div style='font-size: 18px'>Explore More</div>
+          </div>
+        </div></a
+      > 
+    </div>
+  </div>
+</div>
