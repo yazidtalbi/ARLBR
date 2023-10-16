@@ -20,6 +20,7 @@
     "astro": "^3.3.0",
     "astro-icon": "^0.8.1",
     "flowbite": "^1.8.1",
+    "keen-slider": "^6.8.6",
     "tabs": "^0.2.0",
     "tailwindcss": "^3.3.3"
   },
