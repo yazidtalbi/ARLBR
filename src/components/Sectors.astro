@@ -57,7 +57,7 @@ import { Icon } from "astro-icon";
 
 
 <div x-data='{ selectedRadio: "option3" }'>
-  <div class='flex place-content-center h-36'>
+  <div class='flex place-content-start h-36'>
     <div class='flex items-center mr-4 radio-toolbar '>
       <input
         id='inline-checked-radio'
@@ -153,7 +153,10 @@ import { Icon } from "astro-icon";
   <div x-show="selectedRadio === 'option1'">
      
       <div class="flex spacing-x-8"><Icon name="zondicons:checkmark" class="h-10 w-10" />
-  <p class="text-black">Introducing positive changes through the values we cherish.</p></div>
+  <p class="text-black">Introducing positive changes through the values we cherish.</p>
+
+
+</div>
   
   </div>
   <div x-show="selectedRadio === 'option2'">azdazdad</div>
@@ -166,8 +169,8 @@ import { Icon } from "astro-icon";
     x-transition:leave-start='transform opacity-100  -translate-y-6'
     x-transition:leave-end='transform opacity-0   translate-y-6'
   >
-        <div class="flex spacing-x-8"><Icon name="zondicons:checkmark" class="h-10 w-10" />
-  <p class="text-black">Introducing positive changes through the values we cherish.</p></div>
+        <!-- <div class="flex spacing-x-8"><Icon name="zondicons:checkmark" class="h-10 w-10" />
+  <p class="text-black">Introducing positive changes through the values we cherish.</p></div> -->
     <HeroSectorHome />
   </div>
   <div x-show="selectedRadio === 'option4'">
