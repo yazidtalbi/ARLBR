@@ -1,5 +1,5 @@
 ---
-import HeroSectorHome from "../components/HeroSectorHome.astro";
+import HeroSectorHome2 from "../components/HeroSectorHome2.astro";
 import { Icon } from "astro-icon";
 ---
 
@@ -17,7 +17,7 @@ import { Icon } from "astro-icon";
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     border-radius: 30px;
-    border: 1px rgb(156 163 175/50%) solid;
+         border: 1px gray solid;
     
   }
 
@@ -27,38 +27,60 @@ import { Icon } from "astro-icon";
     font-weight: 500;
     font-style: normal;
     text-align: center;
-    color: hsl(0, 0%, 0%);
-   padding: 16px 32px;
+    color: #ffffff;
+   padding: 20px 36px;
     transition: all 0.2s ease-in-out;
         border: 2px black solid;
+        background: black;
   }
 
  
 </style>
 
-<div class='divide'>
-  <div class='grid grid-flow-row-dense grid-cols-4 mx-24 mt-32'>
-    <div>
-      <div style='font-weight: 600; text-transform: uppercase'>
-        secteurs <br />de référence
-      </div>
+<div class='divide  bg-[#f4f5f7] py-32'>
+
+
+
+<div class=" items-center justify-between sm:flex sm:pe-6 lg:pe-8  max-w-[1200px] md:w-full w-10/12  mx-auto" data-astro-cid-amng4zvp=""><div data-astro-cid-amng4zvp=""><div class="mb-10 text-gray-400" style="font-weight: 600; text-transform: uppercase" data-astro-cid-amng4zvp="">
+Secteurs de référence
+</div><div class="flex space-x-12 " data-astro-cid-j5qajhjp="" data-astro-cid-amng4zvp=""><h2 class="text-7xl tracking-tighter col-span-3" data-astro-cid-j5qajhjp="" data-astro-cid-amng4zvp="">
+Adaptés aux Projets <br/>Haute Gamme
+</h2><div class="self-center col-span-1" data-astro-cid-amng4zvp=""><div class="pt-8 flex gap-4 lg:mt-0 justify-end" data-astro-cid-amng4zvp="">
+  
+  <!-- <p class="text-black">Introducing positive changes through the values we cherish.</p>  -->
+
+</div></div></div></div></div>
+
+
+ 
+
+   <div class='grid grid-flow-row-dense grid-cols-4 mx-24 '>
+   
+    <div class='col-span-2 '>
+     
+
+
+
+
+
+      <section class='mb-6 ' x-data='{ selectedRadio: "option2" }'>
+        <div class='grid grid-flow-row-dense grid-cols-4'>
+          <div>
+
+
+
+
+         
+          </div>
+           
+      </section>
     </div>
-    <div class='col-span-3 divide-y'>
-      <div class='flex text-black pb-16' style='flex-direction: column'>
-        <div class='w-2/3'>
-          <h2 class='text-7xl tracking-tighter'>
-            Adaptés aux Projets Haut de Gamme
-          </h2>
-          <p class='pt-12 text-black'>
-            Introducing positive changes through the values we cherish.
-          </p>
-        </div>
-      </div>
+  </div>
 
 
-<div x-data='{ selectedRadio: "option3" }'>
-  <div class='flex place-content-start h-36'>
-    <div class='flex items-center mr-4 radio-toolbar '>
+<div class=" max-w-[1200px] md:w-full w-10/12  mx-auto" x-data='{ selectedRadio: "option3" }'>
+  <div class='flex place-content-end h-36 space-x-5 mb-8'>
+    <div class='flex items-center   radio-toolbar '>
       <input
         id='inline-checked-radio'
         x-model='selectedRadio'
@@ -74,7 +96,7 @@ import { Icon } from "astro-icon";
       >
     </div>
 
-    <div class='flex items-center mr-4 radio-toolbar'>
+    <div class='flex items-center radio-toolbar'>
       <input
         id='inline-3-radio'
         type='radio'
@@ -89,7 +111,7 @@ import { Icon } from "astro-icon";
         >Eti & Ge</label
       >
     </div>
-    <div class='flex items-center mr-4 radio-toolbar'>
+    <div class='flex items-center   radio-toolbar'>
       <input
         id='inline-2-radio'
         type='radio'
@@ -101,10 +123,10 @@ import { Icon } from "astro-icon";
       <label
         for='inline-2-radio'
         class='text-sm font-medium text-gray-900 dark:text-gray-300'
-        >Innovateur</label
+        >Innovateurs</label
       >
     </div>
-    <div class='flex items-center mr-4 radio-toolbar'>
+    <div class='flex items-center   radio-toolbar'>
       <input
         id='inline-4-radio'
         type='radio'
@@ -116,10 +138,10 @@ import { Icon } from "astro-icon";
       <label
         for='inline-4-radio'
         class='text-sm font-medium text-gray-900 dark:text-gray-300'
-        >Immobilier</label
+        >Immobiliers</label
       >
     </div>
-    <div class='flex items-center mr-4 radio-toolbar'>
+    <div class='flex items-center   radio-toolbar'>
       <input
         id='inline-5-radio'
         type='radio'
@@ -171,30 +193,40 @@ import { Icon } from "astro-icon";
   >
         <!-- <div class="flex spacing-x-8"><Icon name="zondicons:checkmark" class="h-10 w-10" />
   <p class="text-black">Introducing positive changes through the values we cherish.</p></div> -->
-    <HeroSectorHome />
+
+  
+
+<div class="text-zinc-900 items-center  flex mx-auto   place-content-center bg-yellow-100 p-16 w-full  ">
+ 
+  <div class="  p-8">
+    <div class="max-w-sm">
+      <h3 class="text-[1.38rem] leading-7 font-semibold mb-4">Grow Revenue Fast</h3>
+      <p class="text-gray-600 mb-6">Create an on-brand home for your product and sa countless hours on design time. Use this table to compare your product competitor and save.</p>
+     
+    </div>
+
+<div class="flex  "><Icon name="zondicons:checkmark" class="h-8 w-8 mr-4" />
+  <p class="text-black">Projet de VR</p></div>
+
   </div>
-  <div x-show="selectedRadio === 'option4'">
-    <HeroSectorHome />
-  </div>
-  <div x-show="selectedRadio === 'option5'">
-    <HeroSectorHome />
+
+   <div class="p-8">
+    <img src="https://shuffle.dev/basko-assets/images/features/revenue.png" class="overflow-clip" />
   </div>
 </div>
 
 
-      <section class='mb-32 pt-16' x-data='{ selectedRadio: "option2" }'>
-        <div class='grid grid-flow-row-dense grid-cols-4'>
-          <div>
 
-
-
-
-         
-          </div>
-           
-      </section>
-    </div>
   </div>
+  <div x-show="selectedRadio === 'option4'">
+    <HeroSectorHome2 />
+  </div>
+  <div x-show="selectedRadio === 'option5'">
+    <HeroSectorHome2 />
+  </div>
+</div>
+
+ 
 </div>
 
 <!-- <script defer src='https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js' -->
