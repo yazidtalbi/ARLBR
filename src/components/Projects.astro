@@ -1,193 +1,57 @@
----
-import 'keen-slider/keen-slider.min.css'
-import KeenSlider from 'keen-slider'
-import ProjectComponent from './ProjectComponent.astro';
----
-
- <style>
-  [class^="number-slide"],
-[class*=" number-slide"] {
-  background: grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
-  height: 300px;
-  max-height: 100vh;
-}
-
-.number-slide1 {
-  background: rgb(64, 175, 255);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 175, 255, 1) 0%,
-    rgba(63, 97, 255, 1) 100%
-  );
-}
-
-.number-slide2 {
-  background: rgb(255, 75, 64);
-  background: linear-gradient(
-    128deg,
-    rgba(255, 154, 63, 1) 0%,
-    rgba(255, 75, 64, 1) 100%
-  );
-}
-
-.number-slide3 {
-  background: rgb(182, 255, 64);
-  background: linear-gradient(
-    128deg,
-    rgba(182, 255, 64, 1) 0%,
-    rgba(63, 255, 71, 1) 100%
-  );
-  background: linear-gradient(
-    128deg,
-    rgba(189, 255, 83, 1) 0%,
-    rgba(43, 250, 82, 1) 100%
-  );
-}
-
-.number-slide4 {
-  background: rgb(64, 255, 242);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 255, 242, 1) 0%,
-    rgba(63, 188, 255, 1) 100%
-  );
-}
-
-.number-slide5 {
-  background: rgb(255, 64, 156);
-  background: linear-gradient(
-    128deg,
-    rgba(255, 64, 156, 1) 0%,
-    rgba(255, 63, 63, 1) 100%
-  );
-}
-.number-slide6 {
-  background: rgb(64, 76, 255);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 76, 255, 1) 0%,
-    rgba(174, 63, 255, 1) 100%
-  );
-}
-
-</style> 
-
-
-
-<section class="bg-[#f4f5f7]  h-[1200px] pt-36   ">
-
-  
-
-
-   <div class=' items-center justify-between sm:flex sm:pe-6 lg:pe-8  max-w-[1200px] md:w-full w-10/12  mx-auto'>
-   <div > <div class="mb-10 text-gray-400" style='font-weight: 600; text-transform: uppercase'>
-        Nos projets
-      </div><div class="grid grid-flow-row-dense grid-cols-4  space-x-12 pb-20" data-astro-cid-j5qajhjp=""><h2 class="text-7xl tracking-tighter col-span-3" data-astro-cid-j5qajhjp="">
-Une Polyvalence Concrétisée en Expérience
-</h2><div class="self-end">
- 
-
-    <div class='pt-8 flex gap-4 lg:mt-0 justify-end'>
-        <button
-          aria-label='Previous slide'
-          id='keen-slider-previous'
-          class='rounded-full border border-gray-600 p-3 text-gray-600 transition hover:bg-gray-900 hover:text-white'
-        >
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke-width='1.5'
-            stroke='currentColor'
-            class='h-5 w-5 rtl:rotate-180'
-          >
-            <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              d='M15.75 19.5L8.25 12l7.5-7.5'></path>
-          </svg>
-        </button>
-
-        <button
-          aria-label='Next slide'
-          id='keen-slider-next'
-          class='rounded-full border border-gray-600 p-3 text-gray-600 transition hover:bg-gray-900 hover:text-white'
-        >
-          <svg
-            class='h-5 w-5 rtl:rotate-180'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M9 5l7 7-7 7'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'></path>
-          </svg>
-        </button>
+<section class=" ">
+  <div class='grid px-4 py-8 gap-8 '>
+    <div
+      style='align-items: center; flex-grow: 1; justify-content: center; position: relative; display: flex; overflow: hidden'
+    >
+      <img
+        class='rounded-md'
+        src='https://framerusercontent.com/images/hmSYyp67T1yTCkw9c0sV1MNCGGA.webp'
+      />
+      <div
+        style='align-items: center; bottom: 0px; flex-direction: column; justify-content: center; left: 0px; position: absolute; top: 0px; z-index: 1; display: flex'
+      >
       </div>
-</div>
-    
-    
-    </div></div>
-
-  
-    </div></div>
-
-<div > 
-
-
-   <div id="keen-slider" class="keen-slider   max-w-[1200px] md:w-full w-10/12  mx-auto">
-    
-      <div class="keen-slider__slide "> <ProjectComponent/> </div> 
-      <div class="keen-slider__slide"> <ProjectComponent/> </div> 
-      <div class="keen-slider__slide"> <ProjectComponent/> </div> 
-      <div class="keen-slider__slide"> <ProjectComponent/> </div> 
-
     </div>
+    <div class='relative self-center' style='   '>
+      <div class=''>
+        <div>
+          <div
+            class='text-lg tracking-wide mb-6 text-gray-500 uppercase font-bold' 
+          >
+            Healthcare
+          </div><div>  <h1 class='text-3xl font-bold  mb-5   '>
+            Zemium — web design for the consulting firm
+          </h1>
+  <p
+            class='text-gray-500' 
+          >
+            They are able to help a startup like mine scale and are very
+            responsive to all our unique needs
+          </p></div>
+        
 
+        </div>
 
- 
-
-</div>
-
-  <div class="container mx-auto text-center justify-center pt-20 text-bold underline"> PLUS DE PROJETS</div>
    
-  
+      </div>
 
+      <!-- <div class="border-t-2 border-gray-700 justify-between py-10 flex bottom-0 absolute w-full">
+      <div>
+        <div style="font-size: 34px; font-weight: 500">8k+</div>
+        <p style="color: rgba(45, 60, 73, 0.9); font-weight: 300">
+          Faster finance<br style="color: rgba(45, 60, 73, 0.9)" />
+          transactions
+        </p>
+      </div>
+      <div>
+        <div style="font-size: 34px; font-weight: 500">160h</div>
+        <p style="color: rgba(45, 60, 73, 0.9); font-weight: 300">Lower expenses <br style="color: rgba(45, 60, 73, 0.9)" />every month</p>
+      </div>
+      <div>
+        <div style="font-size: 34px; font-weight: 500">2m</div>
+        <p style="color: rgba(45, 60, 73, 0.9); font-weight: 300">Trusted regular <br style="color: rgba(45, 60, 73, 0.9)" />users network</p>
+      </div>
+    </div> -->
+    </div>
+  </div>
 </section>
-
-   
-    <script type='module'>
-  import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
-
-  const keenSlider = new KeenSlider(
-    "#keen-slider",
-    {
-      loop: true,
-    
-        slides: {
-          perView: 1,
-          spacing: 30,
-        },
-
-    },
-    []
-  );
-
-
-  const keenSliderPrevious = document.getElementById("keen-slider-previous");
-  const keenSliderNext = document.getElementById("keen-slider-next");
-
-  keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
-  keenSliderNext.addEventListener("click", () => keenSlider.next());
-</script>
-    

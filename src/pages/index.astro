@@ -1,19 +1,18 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import HeaderNew from "../components/HeaderNew.astro";
-import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
-import HeroService from "../components/HeroService.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
- 
-import Sectors from "../components/Sectors.astro";
+import Intro from "../components/Intro.astro"; 
 import Projects from "../components/Projects.astro";
-import BlogPosts from "../components/BlogPosts.astro";
-import Cta from "../components/Cta.astro";
-import Personal from "../components/Personal.astro";
-import OurBenefits from "../components/OurBenefits.astro";
-import HeroNew from "../components/HeroNew.astro";
+import Features from "../components/Features.astro";
+import Sectors from "../components/Sectors.astro";
+import Services from "../components/Services.astro";
+import Posts from "../components/Posts.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Footer from "../components/Footer.astro";
+ 
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+ 
 ---
 
 <!doctype html>
@@ -27,32 +26,37 @@ import HeroNew from "../components/HeroNew.astro";
       href='https://db.onlinewebfonts.com/c/81db551dd19e720ed0bc40dbde312130?family=Beausite+Classic+Regular'
       rel='stylesheet'
     />
+ 
   </head>
   <body>
-    <!-- <Header title={SITE_TITLE} /> -->
-    <HeaderNew title={SITE_TITLE} />
-    <!-- <Hero /> -->
-    <HeroNew/>
-        <Personal />
-    <Projects />
-     <OurBenefits/>
-        <Sectors />
-        <HeroService />
+
+    <!-- <Navigation/> -->
+ <Hero/>
+   <Intro/>
+ <Projects/>  
+   <Features/> 
+       <Sectors/>
+    
+
+   
  
+    <Services/>
 
+    <Posts/>
+    <ContactForm/>
 
-    <BlogPosts />
-    <Cta />
-    <Footer /> 
-</div>
+    <Footer/>  
+ 
+    
   </body>
-</html>
-
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   <script>
     import Alpine from "alpinejs";
     import intersect from "@alpinejs/intersect";
-    Alpine.plugin(intersect)
+    Alpine.plugin(intersect);
     window.Alpine = Alpine;
 
     Alpine.start();
   </script>
+</html>
