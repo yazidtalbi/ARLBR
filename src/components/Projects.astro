@@ -2,9 +2,23 @@
 import ProjectCard from "../components/ProjectCard.astro";
 ---
 
-<swiper-container slides-per-view="1" speed="500" loop="false" css-mode="true">
-  <swiper-slide><ProjectCard /></swiper-slide>
-  <swiper-slide><ProjectCard /></swiper-slide>
-  <swiper-slide><ProjectCard /></swiper-slide>
-  <swiper-slide><ProjectCard /></swiper-slide>
-</swiper-container>
+<section>
+  <h1
+    class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white uppercase"
+  >
+    Nos projets
+  </h1>
+
+  <swiper-container
+    slides-per-view="1"
+    speed="500"
+    loop="false"
+    css-mode="true"
+    class="space-x-6"
+  >
+    <swiper-slide><ProjectCard /></swiper-slide>
+    <swiper-slide><ProjectCard /></swiper-slide>
+    <swiper-slide><ProjectCard /></swiper-slide>
+    <swiper-slide><ProjectCard /></swiper-slide>
+  </swiper-container>
+</section>
