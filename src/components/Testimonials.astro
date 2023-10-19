@@ -1,0 +1,25 @@
+---
+import TestimonialCard from "../components/TestimonialCard.astro";
+---
+
+<section class="">
+  <p
+    class="max-w-2xl mb-6 text-gray-900 text-2xl font-bold lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 px-4 py-8"
+  >
+    We’ve helped hundreds of partners, ranging from startups to medium-sized
+    businesses to achieve their goals. And stellar feedback — is our reward!
+  </p>
+
+  <swiper-container
+    slides-per-view="1.2"
+    speed="500"
+    loop="false"
+    spaceBetween="30"
+    css-mode="true"
+  >
+    <swiper-slide><TestimonialCard /></swiper-slide>
+    <swiper-slide><TestimonialCard /></swiper-slide>
+    <swiper-slide><TestimonialCard /></swiper-slide>
+    <swiper-slide><TestimonialCard /></swiper-slide>
+  </swiper-container>
+</section>
