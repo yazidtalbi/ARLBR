@@ -1,134 +1,167 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 ---
-<section class="px-4 py-8">
-  
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-  <div class='mb-4 border-b border-gray-200 dark:border-gray-700'>
-
-<div class="flex space-x-10">
-
-<Icon class="h-8 w-8 "name="mdi:arrow-left" />
-<h3 class="">Designer</h3>
-<Icon class="h-10 w-10 "name="mdi:arrow-right" />
 
 
-</div>
 
+<section class='px-4 py-8'>
+  <h2 class='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'>
+    Designed for business teams like yours
+  </h2>
+  <div class='mb-4'>
+    <div class='flex justify-center items-center space-x-10 my-10'>
+      <Icon class='h-8 w-18 cursor-pointer pl-12' name='mdi:arrow-left' id='left' />
+ <h4 class="font-bold" id="activeTabName">Profile</h4>
+      <Icon class='h-8 w-18 cursor-pointer pr-12' name='mdi:arrow-right' id='right' />
+    </div>
 
-  <ul
-    class='flex flex-wrap -mb-px text-sm font-medium text-center'
-    id='myTab'
-    data-tabs-toggle='#myTabContent'
-    role='tablist'
-  >
-    <li class='mr-2' role='presentation'>
-      <button
-        class='inline-block p-4 border-b-2 rounded-t-lg'
-        id='profile-tab'
-        data-tabs-target='#profile'
-        type='button'
-        role='tab'
-        aria-controls='profile'
-        aria-selected='false'>Profile</button
-      >
-    </li>
-    <li class='mr-2' role='presentation'>
-      <button
-        class='inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
-        id='dashboard-tab'
-        data-tabs-target='#dashboard'
-        type='button'
-        role='tab'
-        aria-controls='dashboard'
-        aria-selected='false'>Dashboard</button
-      >
-    </li>
-    <li class='mr-2' role='presentation'>
-      <button
-        class='inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
-        id='settings-tab'
-        data-tabs-target='#settings'
-        type='button'
-        role='tab'
-        aria-controls='settings'
-        aria-selected='false'>Settings</button
-      >
-    </li>
-    <li role='presentation'>
-      <button
-        class='inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
-        id='contacts-tab'
-        data-tabs-target='#contacts'
-        type='button'
-        role='tab'
-        aria-controls='contacts'
-        aria-selected='false'>Contacts</button
-      >
-    </li>
-  </ul>
-</div>
-<div id='myTabContent'>
-  <div
-    class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
-    id='profile'
-    role='tabpanel'
-    aria-labelledby='profile-tab'
-  >
-    <p class='text-sm text-gray-500 dark:text-gray-400'>
-     azdazdazdad This is some placeholder content the <strong
-        class='font-medium text-gray-800 dark:text-white'
-        >Profile tab's associated content</strong
-      >. Clicking another tab will toggle the visibility of this one for the
-      next. The tab JavaScript swaps classes to control the content visibility
-      and styling.
-    </p>
+    <ul
+      class='hidden md:flex flex-wrap -mb-px text-sm font-medium text-center'
+      id='myTab'
+      data-tabs-toggle='#myTabContent'
+      role='tablist'
+    >
+      <li class='mr-2' role='presentation'>
+        <button
+          class='inline-block p-4 border-b-2 rounded-t-lg'
+          id='profile-tab'
+          data-tabs-target='#profile'
+          type='button'
+          role='tab'
+          aria-controls='profile'
+          aria-selected='false'>Profile</button
+        >
+      </li>
+      <li class='mr-2' role='presentation'>
+        <button
+          class='inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+          id='dashboard-tab'
+          data-tabs-target='#dashboard'
+          type='button'
+          role='tab'
+          aria-controls='dashboard' 
+          >Dashboard</button
+        >
+      </li>
+      <li class='mr-2' role='presentation'>
+        <button
+          class='inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+          id='settings-tab'
+          data-tabs-target='#settings'
+          type='button'
+          role='tab'
+          aria-controls='settings'
+          aria-selected='false'>Settings</button
+        >
+      </li>
+      <li role='presentation'>
+        <button
+          class='inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+          id='contacts-tab'
+          data-tabs-target='#contacts'
+          type='button'
+          role='tab'
+          aria-controls='contacts'
+          aria-selected='false'>Contacts</button
+        >
+      </li>
+    </ul>
   </div>
-  <div
-    class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
-    id='dashboard'
-    role='tabpanel'
-    aria-labelledby='dashboard-tab'
-  >
-    <p class='text-sm text-gray-500 dark:text-gray-400'>
-      This is some placeholder content the <strong
-        class='font-medium text-gray-800 dark:text-white'
-        >Dashboard tab's associated content</strong
-      >. Clicking another tab will toggle the visibility of this one for the
-      next. The tab JavaScript swaps classes to control the content visibility
-      and styling.
-    </p>
+  <div id='myTabContent'>
+    <div
+      class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
+      id='profile'
+      role='tabpanel'
+      aria-labelledby='profile-tab'
+    >
+      <p class='text-sm text-gray-500 dark:text-gray-400'>
+        azdazdazdad This is some placeholder content the <strong
+          class='font-medium text-gray-800 dark:text-white'
+          >Profile tab's associated content</strong
+        >. Clicking another tab will toggle the visibility of this one for the
+        next. The tab JavaScript swaps classes to control the content visibility
+        and styling.
+      </p>
+    </div>
+    <div
+      class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
+      id='dashboard'
+      role='tabpanel'
+      aria-labelledby='dashboard-tab'
+    >
+      <p class='text-sm text-gray-500 dark:text-gray-400'>
+        This is some placeholder content the <strong
+          class='font-medium text-gray-800 dark:text-white'
+          >Dashboard tab's associated content</strong
+        >. Clicking another tab will toggle the visibility of this one for the
+        next. The tab JavaScript swaps classes to control the content visibility
+        and styling.
+      </p>
+    </div>
+    <div
+      class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
+      id='settings'
+      role='tabpanel'
+      aria-labelledby='settings-tab'
+    >
+      <p class='text-sm text-gray-500 dark:text-gray-400'>
+        This is some placeholder content the <strong
+          class='font-medium text-gray-800 dark:text-white'
+          >Settings tab's associated content</strong
+        >. Clicking another tab will toggle the visibility of this one for the
+        next. The tab JavaScript swaps classes to control the content visibility
+        and styling.
+      </p>
+    </div>
+    <div
+      class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
+      id='contacts'
+      role='tabpanel'
+      aria-labelledby='contacts-tab'
+    >
+      <p class='text-sm text-gray-500 dark:text-gray-400'>
+        This is some placeholder content the <strong
+          class='font-medium text-gray-800 dark:text-white'
+          >Contacts tab's associated content</strong
+        >. Clicking another tab will toggle the visibility of this one for the
+        next. The tab JavaScript swaps classes to control the content visibility
+        and styling.
+      </p>
+    </div>
   </div>
-  <div
-    class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
-    id='settings'
-    role='tabpanel'
-    aria-labelledby='settings-tab'
-  >
-    <p class='text-sm text-gray-500 dark:text-gray-400'>
-      This is some placeholder content the <strong
-        class='font-medium text-gray-800 dark:text-white'
-        >Settings tab's associated content</strong
-      >. Clicking another tab will toggle the visibility of this one for the
-      next. The tab JavaScript swaps classes to control the content visibility
-      and styling.
-    </p>
-  </div>
-  <div
-    class='hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800'
-    id='contacts'
-    role='tabpanel'
-    aria-labelledby='contacts-tab'
-  >
-    <p class='text-sm text-gray-500 dark:text-gray-400'>
-      This is some placeholder content the <strong
-        class='font-medium text-gray-800 dark:text-white'
-        >Contacts tab's associated content</strong
-      >. Clicking another tab will toggle the visibility of this one for the
-      next. The tab JavaScript swaps classes to control the content visibility
-      and styling.
-    </p>
-  </div>
-</div></section>
+</section>
 
+<script>const leftIcon = document.getElementById('left');
+const rightIcon = document.getElementById('right');
+const activeTabName = document.getElementById('activeTabName');
+const tabs = ['Profile', 'Dashboard', 'Settings', 'Contacts']; // Tab names
 
+let currentIndex = 0;
+
+leftIcon.addEventListener('click', () => {
+    // Switch to the previous tab
+    currentIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+    showTab(tabs[currentIndex]);
+});
+
+rightIcon.addEventListener('click', () => {
+    // Switch to the next tab
+    currentIndex = (currentIndex + 1) % tabs.length;
+    showTab(tabs[currentIndex]);
+});
+
+function showTab(tabName) {
+    // Hide all tabs
+    tabs.forEach(tab => {
+        const tabContent = document.getElementById(tab.toLowerCase());
+        tabContent.classList.add('hidden');
+    });
+
+    // Show the selected tab
+    const selectedTab = document.getElementById(tabName.toLowerCase());
+    selectedTab.classList.remove('hidden');
+
+    // Update the active tab name
+    activeTabName.textContent = tabName;
+}
+</script>

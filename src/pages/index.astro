@@ -1,7 +1,8 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import Navigation from "../components/Navigation.astro";
 import Hero from "../components/Hero.astro";
-import Intro from "../components/Intro.astro"; 
+import Intro from "../components/Intro.astro";
 import Projects from "../components/Projects.astro";
 import Features from "../components/Features.astro";
 import Sectors from "../components/Sectors.astro";
@@ -9,54 +10,44 @@ import Services from "../components/Services.astro";
 import Posts from "../components/Posts.astro";
 import ContactForm from "../components/ContactForm.astro";
 import Footer from "../components/Footer.astro";
- 
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
- 
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
-<html lang='fr'>
+<html lang="fr">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <link href='https://fonts.cdnfonts.com/css/brigfted' rel='stylesheet' />
-    <link href='https://fonts.cdnfonts.com/css/frenstyle' rel='stylesheet' />
-    <link href='https://fonts.cdnfonts.com/css/recoleta' rel='stylesheet' />
+    <link href="https://fonts.cdnfonts.com/css/brigfted" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/frenstyle" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/recoleta" rel="stylesheet" />
     <link
-      href='https://db.onlinewebfonts.com/c/81db551dd19e720ed0bc40dbde312130?family=Beausite+Classic+Regular'
-      rel='stylesheet'
+      href="https://db.onlinewebfonts.com/c/81db551dd19e720ed0bc40dbde312130?family=Beausite+Classic+Regular"
+      rel="stylesheet"
     />
- 
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
+    <Navigation />
+    <Hero />
+    <Intro />
+    <Projects />
+    <Features />
+    <Sectors />
 
-    <!-- <Navigation/> -->
- <Hero/>
-   <Intro/>
- <Projects/>  
-   <Features/> 
-       <Sectors/>
-    
+    <Services />
 
-   
- 
-    <Services/>
+    <Posts />
+    <ContactForm />
 
-    <Posts/>
-    <ContactForm/>
+    <Footer />
 
-    <Footer/>  
- 
-    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
+    ></script>
   </body>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  <script>
-    import Alpine from "alpinejs";
-    import intersect from "@alpinejs/intersect";
-    Alpine.plugin(intersect);
-    window.Alpine = Alpine;
-
-    Alpine.start();
-  </script>
 </html>
