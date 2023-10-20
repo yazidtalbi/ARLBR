@@ -22,6 +22,7 @@ export default {
     },
     fontFamily: {
       body: [
+        "SuisseIntl-Regular",
         "Inter",
         "ui-sans-serif",
         "system-ui",
@@ -39,6 +40,7 @@ export default {
         "Noto Color Emoji",
       ],
       sans: [
+        "SuisseIntl-Regular",
         "Inter",
         "ui-sans-serif",
         "system-ui",
